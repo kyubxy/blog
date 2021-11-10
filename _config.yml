@@ -22,7 +22,7 @@ title: the peipa shredder
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
     Crackhead ramblings about code and sometimes Japanese trains
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "peipacut.github.io"
 twitter_username: 
 github_username: peipacut
