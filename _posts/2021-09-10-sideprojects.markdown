@@ -1,8 +1,0 @@
----
-layout: post
-title:  "Side projects for this holidays"
-date:   2021-09-10 01:27:01 +1000
-categories: code
----
-
-TODO

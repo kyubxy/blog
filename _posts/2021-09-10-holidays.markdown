@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "Side projects for this holidays"
+date:   2021-09-10 01:27:01 +1000
+categories: code
+---
+
+With my second semester at uni coming to an end, I've had plenty of thoughts of the sort of side projects I want to start for the upcoming holidays. Admittedly, this thinking time has also cut into the time I should probably spend studying but with only one exam left, there's probably not too much harm in starting a blog post like this. The main ideas I have are:
+
+- Modifying the font *Source Code Pro* to include ligatures
+- Finishing my graphics framework Yasai
+- Writing a calendar app
+- Contributing to osu!lazer
+
+# Codelig
+In our first semester of uni, we took a comp course that had us learn Haskell, it was an interesting experience learning a language that felt so different from most and I was relieved to learn that we weren't going to be spending the first week learning how to print Hello, world! to the console (though Haskell may actually possess the most interesting Hello World tutorial in comparison to the vast majority of other imperative languages). 
+
+But with that aside, I decided to use the font Hasklig as my main font primarily because of the Haskell specific ligatures it provdied (an example from their repo is provided below). 
+
+![hasklig](https://github.com/i-tu/Hasklig/raw/main/hasklig_example.png?raw=true)
+
+*Taken from [the hasklig repo's readme](https://github.com/i-tu/Hasklig)*
+
+Hasklig is an extension of the preexisting font Source Code Pro from Adobe, which I thought looked absolutely amazing and was a step up from the other monospace fonts I was using previously. It shouldn't be a surprise that I loaded it into intellij when I started taking another comp course taught in Java. And even now I use it in all sorts of environments from Rider and even my terminal!
+
+![rice](https://media.discordapp.net/attachments/826370544664313877/866496454678806538/unknown.png?width=953&height=536)
+
+*You can't really see many ligatures here apart from my terminal prompt in the top right but the point still stands*
+
+As the name suggests however, although it has a relatively rich selection of ligatures the ligatures it provides are primarily meant to be used with Haskell. As such, many frequently used ligatures like the less than or equal sign are missing. There are also plenty of other unneeded ligatures, this can be harmless, like the existence of the monad operators ``>>=`` ``>>``, though some are just plain misleading, like the compound division statement ``/=`` which gets read as an equals sign with a strikethrough (additionally ``!=`` has no supported ligatures). 
+
+These issues are bareable and the code is still perfectly readable, they're just slightly annoying. Despite that, I absolutely love source code pro and refuse to use anything else. My solution: modify the ligatures in Hasklig so they match ligatures for more conventional languages.
+
+Introducing Codelig (sort of), it really is just source code pro with (conventional) ligatures. Because the Hasklig repo is open source and is licensed under the OFL-1.1 license, I'm hoping to get in there and just switch a few ligatures around (and maybe add some as well). 
+
+# Yasai
+Writing a graphics framework has been a long standing challenge for me but to keep things short, let's just say I've been at this for slightly longer than I should be. By the end of the holidays I'm hoping to have Yasai not only in a working state but running on a completely different backend which should allow for shaders and a bunch of other cool things. 
+
+I could write a whole post on Yasai alone but a quick explanation on what Yasai is supposed to be: what I'm building is a scene graph game engine for C#, a lot of the syntax and structure is stuff that I'm shamelessly ripping from osu!framework (if it works may as well use it right?) but after having spent nearly an entire semester using JavaFX, I'm hoping to take some inspiration from there as well (of course, within the limits of C# code design, which I feel differs slightly from that of Java).
+
+Honestly, I really just want to finish this thing so I can hurry up and build some video games.
+
+# Calendar app
+This kind of comes under a general desire to learn reactjs and full stack web development in general. I feel I'm doing a lot of client stuff which is great except that I can't really show people what I'm doing without either my own machine or convincing them to download (and probably even build) the stuff that I'm making. 
+
+Because I haven't done web design to this extent before I'm hoping to start with some smaller apps, I have some ideas for a social media app where you can only post to a public forum 3 times every hour but if posts posted in the last few days gain likes you get more oppurtunities to send more posts. Even that I feel might be a bit ambitious though so it really just depends on how I feel I guess, the important thing is that I want to start small before going for this calendar app.
+
+And in terms of what this app even is, the main idea is that I feel apps like google calendar, outlook calendar and even trello are great in their own ways but lack some fundamental features that would make it perfectly ideal for organising my workflow. What I'm hoping to build is a stupidly flexible yet simple productivity app that the user can use to plan for the future. As someone who uses these sorts of apps on the daily, I'm hoping I can build something that I can use later. 
+
+Also I'm not coding this one alone, and I'm later hoping to open source, so look forward to that :v
+
+# osu!lazer
+This one has also been a long time desire. I was originally given the verified role on the development discord way back when I was in high school but obviously little high school me wasn't capable enough to process the stupidly expansive codebase that was 20 times larger than anything I had coded myself, let alone function in a proper open source environment. With the inevitable expansion of the codebase over the past 4 years, I still find contributing kind of daunting but my main goal is to have at least one PR merged. At least then I can put *open source contributor* on my resume.
+
+# Closing
+
+I didn't mention it here but the other thing I'm working on is this very blog. I'm hoping to post every so often about dev stuff and anything else I find interesting. Feel like writing in this way is very beneficial and may be kind of fun to look back on later. Defiently expect more content.
+
+But anyways, thanks for reading and I hope to catch you all later!
